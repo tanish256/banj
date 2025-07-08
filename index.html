@@ -99,10 +99,22 @@
   </div>
 </nav>
 
+<style>
+    @media (max-width: 768px) {
+    .hero-section {
+      background-image: url('imgs/hero2.jpeg') !important;
+    }
+  }
 
+  @media (min-width: 769px) {
+    .hero-section {
+      background-image: url('imgs/hero2.png') !important;
+    }
+  }
+</style>
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-h-screen flex items-center relative overflow-hidden pt-16"
-    style="background-image: url('imgs/hero.png'); background-repeat: none; background-size: cover;">
+    <section id="home" class="hero-section hero-gradient min-h-screen flex items-center relative overflow-hidden pt-16"
+    style=" background-repeat: none; background-size: cover;">
         <div class="absolute inset-0 bg-deep-blue/50"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
             <div class="text-center">
@@ -110,7 +122,7 @@
                     Professional Electrical Services
                 </h1>
                 <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                    Your trusted partner for power line surveys, CCTV installations, and smart home solutions
+                    Your trusted partner in comprehensive power solutions.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#services" class="bg-white text-electric-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
