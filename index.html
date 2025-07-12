@@ -131,6 +131,9 @@
         .loaded body {
             overflow: auto;
         }
+        .slider-image {
+            transition: opacity 0.7s ease-in-out;
+        }
     </style>
 <body class="bg-gray-50 text-gray-900">
 
@@ -200,7 +203,7 @@
     <a href="about-us.html" class="block text-gray-700 hover:text-electric-blue px-3 py-2 rounded-md text-sm font-medium">About</a>
     <a href="#contact" class="block bg-electric-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-deep-blue mt-2">Contact</a>
   </div>
-</nav>
+    </nav>
 
 <style>
     @media (max-width: 768px) {
@@ -259,7 +262,15 @@
                 <!-- Power Line Construction -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/pw-construct.webp" alt="Power Line Construction" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/pw-construct.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -281,7 +292,15 @@
                 <!-- Substation & Switchgear -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/substn-switchgear.webp" alt="Substation and Switchgear Installation" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/substn-switchgear.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -303,7 +322,15 @@
                 <!-- Industrial Electrical Systems -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/ind_elec_syst.webp" alt="Industrial Electrical Systems" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/ind_elec_syst.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -326,7 +353,19 @@
                 <!-- Commercial & Domestic Installations -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/comm_resd_inst.webp" alt="Commercial and Domestic Installations" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/comm_resd2.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                            <img src="service-imgs/comm_resd1.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                            <img src="service-imgs/comm_resd3.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="1"></button>
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="2"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -348,7 +387,15 @@
                 <!-- Solar Energy Systems -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/solar_inst.webp" alt="Solar Energy Systems" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/solar_inst.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -370,7 +417,15 @@
                 <!-- Power Backup Systems -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/power_bckup.webp" alt="Power Backup Systems" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/power_bckup.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -392,7 +447,15 @@
                 <!-- Smart Metering Systems -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/smart_mont.webp" alt="Smart Metering Systems" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/smart_mont.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -414,7 +477,15 @@
                 <!-- Electrical Maintenance -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/elec_mntnce.webp" alt="Electrical Maintenance" class="w-full h-full object-cover">
+                                                <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/elec_mntnce.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -436,7 +507,15 @@
                 <!-- HVAC Systems -->
                 <div class="service-card bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden-service" style="display: none;">
                     <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
-                        <img src="service-imgs/hvac.webp" alt="HVAC Systems" class="w-full h-full object-cover">
+                        <div class="image-slider relative w-full h-full">
+                        <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                            <img src="service-imgs/hvac.webp" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 1">
+                        </div>
+                        <!-- Manual controls (dots) -->
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                            <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                        </div>
+                        </div>
                     </div>
                     <div class="w-12 h-12 bg-electric-blue rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -677,18 +756,21 @@
                 <div class="relative" id="free-quote">
                     <div class="bg-electric-blue rounded-2xl p-8 text-white">
                         <h3 class="text-2xl font-bold mb-6">Get Your Free Quote Today</h3>
-                        <form class="space-y-4">
-                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-gray-900">
-                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg text-gray-900">
-                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg text-gray-900">
-                            <select class="w-full px-4 py-3 rounded-lg text-gray-900">
+                        <form class="space-y-4" 
+                         action="https://formspree.io/f/mdkzqjjv"
+                        method="POST"
+                        >
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-gray-900" name="name">
+                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg text-gray-900" name="email">
+                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg text-gray-900" name="tel">
+                            <select class="w-full px-4 py-3 rounded-lg text-gray-900" name="Service">
                                 <option>Select Service</option>
                                 <option>Power Line Survey</option>
                                 <option>CCTV Installation</option>
                                 <option>Smart Home Setup</option>
                                 <option>General Electrical Work</option>
                             </select>
-                            <textarea placeholder="Briefly describe the project scope, location, and any specific requirements" rows="3" class="w-full px-4 py-3 rounded-lg text-gray-900"></textarea>
+                            <textarea placeholder="Briefly describe the project scope, location, and any specific requirements" rows="3" class="w-full px-4 py-3 rounded-lg text-gray-900" name="message"></textarea>
                             <button type="submit" class="w-full bg-white text-electric-blue py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                                 Request Free Quote
                             </button>
@@ -954,11 +1036,11 @@
             });
 
             // Form submission handler
-            document.querySelector('form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your inquiry! We will contact you soon.');
-                this.reset();
-            });
+            // document.querySelector('form').addEventListener('submit', function(e) {
+            //     e.preventDefault();
+            //     alert('Thank you for your inquiry! We will contact you soon.');
+            //     this.reset();
+            // });
             
             // See more services toggle
             const seeMoreBtn = document.getElementById('see-more-btn');
@@ -981,5 +1063,42 @@
             }
         });
     </script>
+    <script>
+  document.querySelectorAll('.image-slider').forEach((slider) => {
+    const images = slider.querySelectorAll('.slider-image');
+    const dots = slider.querySelectorAll('button[data-slide]');
+    let currentIndex = 0;
+    let intervalId;
+
+    const showSlide = (index) => {
+      images.forEach((img, i) => {
+        img.style.opacity = i === index ? '1' : '0';
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-electric-blue', i === index);
+        dot.classList.toggle('bg-white', i !== index);
+      });
+      currentIndex = index;
+    };
+
+    const nextSlide = () => {
+      const nextIndex = (currentIndex + 1) % images.length;
+      showSlide(nextIndex);
+    };
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        clearInterval(intervalId);
+        showSlide(index);
+        intervalId = setInterval(nextSlide, 5000);
+      });
+    });
+
+    // Initialize
+    showSlide(0);
+    intervalId = setInterval(nextSlide, 5000);
+  });
+</script>
+
 <script src="//code.tidio.co/7cfrltf3ye7mzpuw68suxifyldyrbqlf.js" async></script>
 </body></html>
