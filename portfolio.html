@@ -172,7 +172,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project 1 - Commercial -->
-          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="commercial">
+          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="residential">
             <div class="h-64 overflow-hidden">
                 <div class="image-slider relative w-full h-full">
                 <div class="slides w-full h-full overflow-hidden relative rounded-xl">
@@ -198,7 +198,7 @@
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">COMMERCIAL</span>
+                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">RESIDENTIAL</span>
                 <span class="text-gray-500 text-sm">2023</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">
@@ -217,21 +217,43 @@
           </div>
 
           <!-- Project 2 - Residential -->
-          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="residential smart-home">
+          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="industrial">
             <div class="h-64 overflow-hidden">
-              <img
-                src="imgs/image_smt_hm.png"
-                alt="Smart Home Installation"
-                class="w-full h-full object-cover"
-              />
+                <div class="image-slider relative w-full h-full">
+                <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                    <img src="projects-img/powerplant1.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                    <img src="projects-img/powerplant2.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/powerplant3.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/powerplant4.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/powerplant5.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/powerplant6.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/powerplant7.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/powerplant8.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/powerplant9.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/powerplant10.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                </div>
+                <!-- Manual controls (dots) -->
+                <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="1"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="2"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="3"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="4"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="5"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="6"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="7"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="8"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="9"></button>
+                </div>
+                </div>
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">RESIDENTIAL</span>
+                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">INDUSTRIAL</span>
                 <span class="text-gray-500 text-sm">2024</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Luxury Smart Home Automation
+                Industrial Power Plant 
               </h3>
               <p class="text-gray-600 mb-4">
                 Integrated smart home system with lighting control, security, and energy management for a high-end residential property.
@@ -248,11 +270,33 @@
           <!-- Project 3 - Industrial -->
           <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="industrial">
             <div class="h-64 overflow-hidden">
-              <img
-                src="imgs/image_004.jpeg"
-                alt="Industrial Electrical Installation"
-                class="w-full h-full object-cover"
-              />
+                <div class="image-slider relative w-full h-full">
+                <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                    <img src="projects-img/substation1.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                    <img src="projects-img/substation2.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/substation3.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/substation4.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/substation5.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/substation6.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/substation7.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/substation8.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/substation9.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/substation10.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                </div>
+                <!-- Manual controls (dots) -->
+                <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="1"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="2"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="3"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="4"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="5"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="6"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="7"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="8"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="9"></button>
+                </div>
+                </div>
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
@@ -260,7 +304,7 @@
                 <span class="text-gray-500 text-sm">2022</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Manufacturing Plant Electrical Upgrade
+                Substation Construction
               </h3>
               <p class="text-gray-600 mb-4">
                 Complete electrical system overhaul for a manufacturing facility, including high-voltage distribution and machine wiring.
@@ -274,72 +318,24 @@
             </div>
           </div>
 
-          <!-- Project 4 - CCTV -->
-          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="cctv commercial">
-            <div class="h-64 overflow-hidden">
-              <img
-                src="imgs/image_003.jpeg"
-                alt="CCTV Security System Installation"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between items-start mb-2">
-                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">CCTV</span>
-                <span class="text-gray-500 text-sm">2023</span>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Retail Complex Security System
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Comprehensive CCTV surveillance system installation with 48 cameras, monitoring station, and remote access capabilities.
-              </p>
-              <div class="flex items-center text-sm text-electric-blue hidden font-medium">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                </svg>
-                Nakuru, Kenya
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 - Residential -->
-          <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="residential">
-            <div class="h-64 overflow-hidden">
-              <img
-                src="imgs/image_005.jpeg"
-                alt="Residential Electrical Wiring"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between items-start mb-2">
-                <span class="bg-blue-100 text-electric-blue text-xs font-semibold px-3 py-1 rounded-full">RESIDENTIAL</span>
-                <span class="text-gray-500 text-sm">2024</span>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Gated Community Electrical Infrastructure
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Complete electrical installation for a 50-unit luxury gated community, including underground wiring and backup systems.
-              </p>
-              <div class="flex items-center text-sm text-electric-blue hidden font-medium">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                </svg>
-                Eldoret, Kenya
-              </div>
-            </div>
-          </div>
-
           <!-- Project 6 - Industrial -->
           <div class="project-card bg-white rounded-xl shadow-md overflow-hidden" data-category="industrial">
             <div class="h-64 overflow-hidden">
-              <img
-                src="imgs/image_007.jpeg"
-                alt="Industrial Power Distribution"
-                class="w-full h-full object-cover"
-              />
+                <div class="image-slider relative w-full h-full">
+                <div class="slides w-full h-full overflow-hidden relative rounded-xl">
+                    <img src="projects-img/transmission1.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Power Line Construction 1">
+                    <img src="projects-img/transmission2.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 2">
+                    <img src="projects-img/transmission3.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                    <img src="projects-img/transmission4.jpeg" class="slider-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Power Line Construction 3">
+                </div>
+                <!-- Manual controls (dots) -->
+                <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="0"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="1"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="2"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-70 hover:opacity-100 transition" data-slide="3"></button>
+                </div>
+                </div>
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
@@ -347,7 +343,7 @@
                 <span class="text-gray-500 text-sm">2021</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Power Distribution System Upgrade
+                Electrical Transmission Lines
               </h3>
               <p class="text-gray-600 mb-4">
                 High-capacity power distribution system for an industrial park, including transformer installations and switchgear.
