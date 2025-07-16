@@ -168,7 +168,7 @@
           </div>
           <div>
             <h1 class="text-2xl font-bold text-electric-blue leading-none">BANJ</h1>
-            <p class="text-sm text-gray-600">BANJ ELECTRICALS LTD</p>
+            <p class="text-sm text-gray-600">BANJ ELECTRICALS COMPANY LTD</p>
           </div>
         </div>
 
@@ -1082,41 +1082,41 @@
         });
     </script>
     <script>
-  document.querySelectorAll('.image-slider').forEach((slider) => {
-    const images = slider.querySelectorAll('.slider-image');
-    const dots = slider.querySelectorAll('button[data-slide]');
-    let currentIndex = 0;
-    let intervalId;
+    document.querySelectorAll('.image-slider').forEach((slider) => {
+        const images = slider.querySelectorAll('.slider-image');
+        const dots = slider.querySelectorAll('button[data-slide]');
+        let currentIndex = 0;
+        let intervalId;
 
-    const showSlide = (index) => {
-      images.forEach((img, i) => {
-        img.style.opacity = i === index ? '1' : '0';
-      });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('bg-electric-blue', i === index);
-        dot.classList.toggle('bg-white', i !== index);
-      });
-      currentIndex = index;
-    };
+        const showSlide = (index) => {
+        images.forEach((img, i) => {
+            img.style.opacity = i === index ? '1' : '0';
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-electric-blue', i === index);
+            dot.classList.toggle('bg-white', i !== index);
+        });
+        currentIndex = index;
+        };
 
-    const nextSlide = () => {
-      const nextIndex = (currentIndex + 1) % images.length;
-      showSlide(nextIndex);
-    };
+        const nextSlide = () => {
+        const nextIndex = (currentIndex + 1) % images.length;
+        showSlide(nextIndex);
+        };
 
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        clearInterval(intervalId);
-        showSlide(index);
+        dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(intervalId);
+            showSlide(index);
+            intervalId = setInterval(nextSlide, 5000);
+        });
+        });
+
+        // Initialize
+        showSlide(0);
         intervalId = setInterval(nextSlide, 5000);
-      });
     });
-
-    // Initialize
-    showSlide(0);
-    intervalId = setInterval(nextSlide, 5000);
-  });
-</script>
+    </script>
 
 <script src="//code.tidio.co/7cfrltf3ye7mzpuw68suxifyldyrbqlf.js" async></script>
 </body></html>
